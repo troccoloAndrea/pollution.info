@@ -1,13 +1,17 @@
-import _ from 'lodash'
+import GetCurrentPosition from './CurrentPosition'
 import './css/style.css'
 
+
+
+
 function component() {
+  alert("init");
+    
     const element = document.createElement('div');
-  
-    // Lodash, currently included via a script, is required for this line to work
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.classList.add('hello');
-  
+    GetCurrentPosition((position) => {
+      alert(position)
+      element.innerHTML = position.latitude;
+    });
     return element;
   }
   
