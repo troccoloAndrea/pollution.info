@@ -2,6 +2,149 @@
     margin:0px;
     padding:0px;
 }
+html,body{
+    background-color: #F9F7FF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+h2{
+    color:#550DE6;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.9;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.anchor {
+    display: block;
+    height: 100px;
+    margin-top: -100px;
+    visibility: hidden;
+}
+.navbar{
+    background-color: #fff;
+    color:#550DE6;
+    padding-top:15px;
+    padding-bottom:15px;
+    -webkit-box-shadow: 0px 10px 23px 1px rgba(242,242,242,1);
+    -moz-box-shadow: 0px 10px 23px 1px rgba(242,242,242,1);
+    box-shadow: 0px 10px 23px 1px rgba(242,242,242,1);
+}
+.navbar-brand{
+    color:#550DE6;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.9;
+    font-size: 1.5rem;
+}
+.navbar-collapse{
+    justify-content: flex-end;
+}
+.nav-item{
+    margin-left:25px;
+}
+.navbar form{
+    display: flex;
+    flex-direction: row;
+}
+.form-control{
+    border-radius: 50px;
+}
+.btn{
+    border-color: #550DE6;
+    color:#550DE6;
+    border-radius: 50px;
+    padding: 10px 15px 10px 15px;
+    transition:0.3s;
+
+}
+.btn:hover{
+    background-color: #550DE6;
+    color: #fff;
+}
+.btn i{
+    display: inline;
+    margin-left: 10px;
+}
+main{
+    margin-top:100px;
+}
+.data-row{
+    padding-top:20px;
+    min-height: 400px;
+}
+.data-card{
+    background-color: #fff;
+    height: 100%;
+    border-radius: 10px;
+    padding:20px 20px 20px 20px;
+    -webkit-box-shadow: 0px 0px 46px 0px rgba(219, 219, 219, 0.71);
+    -moz-box-shadow: 0px 0px 46px 0px rgba(219, 219, 219, 0.71);
+    box-shadow: 0px 0px 46px 0px rgba(219, 219, 219, 0.71);
+}
+.data-card #aqi-value{
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.pollution-value{
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+footer{
+    background-color: #550DE6;
+    color:#fff;
+    padding-top:50px;
+    padding-bottom:50px;
+    text-align: center;
+    margin-top:50px;
+}
+footer  ul{
+    list-style-type: none;
+}
+footer li{
+    padding-top:10px;
+}
+footer a{
+    color: #fff !important;
+    text-decoration: none !important;
+    transition:0.3s;
+}
+footer a:hover{
+    font-weight: 500;
+}
+.fa-heart{
+    color:red;
+}
+.info i{
+    margin-left: 10px;
+}
+.icon-box{
+    font-size: 1.5rem;
+}
+.icon-box i{
+    margin-right: 15px;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+.icon-box a:hover i{
+    transform: scale(1.1);
+}
 /* font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
+
+
+#mapid { 
+    height: 100%; 
+}

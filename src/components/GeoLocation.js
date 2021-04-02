@@ -1,4 +1,6 @@
-export default async function GetCurrentPosition(){
+import Search from './Search'
+
+export default () => {
     navigator.geolocation.getCurrentPosition(success, error, options);
     
     var options = {
@@ -8,7 +10,8 @@ export default async function GetCurrentPosition(){
       };
       
       function success(pos) {
-          return pos.coords;
+          Search(undefined, pos.coords)
+
       }
       
       function error(err) {

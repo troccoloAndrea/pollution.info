@@ -1,18 +1,26 @@
-import GetCurrentPosition from './CurrentPosition'
+import GeoLocation from './components/GeoLocation'
+import Search from './components/Search'
+import axios from 'axios'
 import './css/style.css'
 
-
-
-
-function component() {
-  alert("init");
-    
-    const element = document.createElement('div');
-    GetCurrentPosition((position) => {
-      alert(position)
-      element.innerHTML = position.latitude;
-    });
-    return element;
+document.getElementById("form-search").addEventListener("submit", (e) => {
+  e.preventDefault();
+  let city = document.getElementById("input-city").value
+  try {
+    Search(city)
+  } catch (err) {
+    alert(err);
   }
-  
-  document.body.appendChild(component());
+
+});
+
+document.getElementById("btn-geolocation").addEventListener("click", () => {
+  try {
+    GeoLocation();
+  } catch (err) {
+    alert(err);
+  }
+
+})
+
+
