@@ -1,6 +1,5 @@
 import GeoLocation from './components/GeoLocation'
 import Search from './components/Search'
-import axios from 'axios'
 import './css/style.css'
 
 document.getElementById("form-search").addEventListener("submit", (e) => {
