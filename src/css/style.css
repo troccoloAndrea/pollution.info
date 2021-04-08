@@ -207,7 +207,6 @@ font-family: 'Roboto', sans-serif; */
     padding: 15px 25px 15px 25px;
     border-radius: 25px;
     width: 200px;
-    margin-top: 25px;
     margin-bottom: 25px;
 }
 
@@ -276,7 +275,14 @@ font-family: 'Roboto', sans-serif; */
 .not-found i{
     margin-left: 10px;;
 }
-
+th label{
+    display: block;
+    margin-bottom: 0px !important;
+    font-size: 10px !important;
+}
+td{
+    vertical-align: middle;
+}
 .good {
     background-color: #009966;
     color: #fff;
@@ -305,4 +311,17 @@ font-family: 'Roboto', sans-serif; */
 .hazardous {
     background-color: #7E0023;
     color: #fff;
+}
+.navbar-toggler-icon{
+    color:#433FD1;
+    vertical-align: middle;
+}
+
+@media (max-width: 1000px){
+    #arrow-up{
+        display: none;
+    }
+    #btn-geolocation{
+        width: 100%;
+    }
 }
