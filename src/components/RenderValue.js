@@ -10,6 +10,7 @@ export default (find, data) => {
           ${AqiBadge(data.aqi)}
         </div>
         <div class="col-md-6">
+        <h3><i class="fas fa-tachometer-alt"></i> Valori misurati</h3>
         <table class="table">
         <tbody>
           <tr>
@@ -35,7 +36,13 @@ export default (find, data) => {
     document.getElementById("data-value").innerHTML = dataValue;
     document.getElementById("data-row").scrollIntoView();
   } else {
-    document.getElementById("data-value").innerHTML = "non trovato";
+    document.getElementById("data-value").innerHTML = `
+    <div class="not-found">
+    <p>404<i class="far fa-sad-tear"></i></p>
+    <h3>Non ho trovato nessuna stazione in questa città</h3>
+    </div>
+    
+    `;
     document.getElementById("data-row").scrollIntoView();
   }
 
