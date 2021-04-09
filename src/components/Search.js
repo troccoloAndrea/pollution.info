@@ -6,7 +6,7 @@ export default (city, position) => {
     let APIlink = "";
     
     if(city != undefined){
-        APIlink = `https://api.waqi.info/feed/${city}/?token=${process.env.TOKEN}`
+        APIlink = process.env.APILINK + `${city}/?token=${process.env.TOKEN}`
     }
     else{
         if(position == undefined){
@@ -14,7 +14,7 @@ export default (city, position) => {
         }
         console.log("lat" + position.latitude)
         console.log("long" + position.longitude)
-        APIlink = `https://api.waqi.info/feed/geo:${position.latitude};${position.longitude}/?token=${process.env.TOKEN}`
+        APIlink = process.env.APILINK + `geo:${position.latitude};${position.longitude}/?token=${process.env.TOKEN}`
         console.log(APIlink)
     }
     console.log("link: " + APIlink);

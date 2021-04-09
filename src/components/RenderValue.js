@@ -50,17 +50,19 @@ export default (find, data) => {
             </div>
             <div class="modal-body">
                 <h6>Air Quality Index (AQI)</h6>
-                <p>lorem ipsum</p>
+                <p>L'indice di qualità dell'aria (AQI) è usato dalle agenzie governative per comunicare al pubblico quanto è inquinata l'aria attualmente o quanto si prevede che lo diventi. I rischi per la salute pubblica aumentano all'aumentare dell'AQI.</p>
                 <h6>pm2.5</h6>
-                <p>lorem ipsum</p>
+                <p>PM 2.5 è una classificazione numerica data alle polveri sottili in base alle dimensioni medie delle loro particelle.
+                Con il termine PM 2,5 si raggruppano tutte le particelle aventi dimensioni minori o uguali a 2,5 micron (µm) ( dove 1 micron (μ) corrisponde ad un millesimo di millimetro ).</p>
                 <h6>pm10</h6>
-                <p>lorem ipsum</p>
+                <p>Il particolato, nella chimica ambientale, indica l'insieme delle sostanze solide o liquide sospese in aria che hanno dimensioni che variano da pochi nanometri a 100 µm. Il particolato è uno degli inquinanti più frequenti nelle aree urbane.</p>
                 <h6>o3</h6>
-                <p>lorem ipsum</p>
+                <p>E' un inquinante molto tossico per l'uomo, è un irritante per tutte le membrane mucose ed una esposizione critica e prolungata può causare tosse, mal di testa e perfino edema polmonare.
+                L'Ozono è, fra gli inquinanti atmosferici, quello che svolge una marcata azione fitotossica nei confronti degli organismi vegetali, con effetti immediatamente visibili di necrosi fogliare ed effetti meno visibili come alterazioni enzimatiche e riduzione dell'attività di fotosintesi. </p>
                 <h6>CO</h6>
-                <p>lorem ipsum</p>
+                <p>Il monossido di carbonio (o ossido di carbonio o ossido carbonioso) è un gas incolore, inodore e insapore leggermente meno denso dell'aria. Se presente in concentrazioni superiori a circa 35 ppm risulta altamente tossico per gli animali, sia vertebrati che invertebrati, che usano l'emoglobina per trasportare l'ossigeno all'interno dell'organismo; in piccole quantità viene tuttavia prodotto dal normale metabolismo animale e si ritiene svolga alcune normali funzioni biologiche.</p>
                 <h6>No2</h6>
-                <p>lorem ipsum</p>
+                <p>Il diossido di azoto è un forte irritante delle vie polmonari; già a moderate concentrazioni nell'aria provoca tosse acuta, dolori al torace, convulsioni e insufficienza circolatoria. </p>
             </div>
           </div>
         </div>
