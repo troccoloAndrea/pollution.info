@@ -62,7 +62,7 @@ export default (find, data) => {
                 <h6>CO</h6>
                 <p>Il monossido di carbonio (o ossido di carbonio o ossido carbonioso) è un gas incolore, inodore e insapore leggermente meno denso dell'aria. Se presente in concentrazioni superiori a circa 35 ppm risulta altamente tossico per gli animali, sia vertebrati che invertebrati, che usano l'emoglobina per trasportare l'ossigeno all'interno dell'organismo; in piccole quantità viene tuttavia prodotto dal normale metabolismo animale e si ritiene svolga alcune normali funzioni biologiche.</p>
                 <h6>No2</h6>
-                <p>Il diossido di azoto è un forte irritante delle vie polmonari; già a moderate concentrazioni nell'aria provoca tosse acuta, dolori al torace, convulsioni e insufficienza circolatoria. </p>
+                <p>Il diossido di azoto è un forte irritante delle vie polmonari; già a moderate concentrazioni nell'aria provoca tosse acuta, dolori al torace, convulsioni e insufficienza circolatoria.</p>
             </div>
           </div>
         </div>
