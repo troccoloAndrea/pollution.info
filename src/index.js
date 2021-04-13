@@ -17,7 +17,7 @@ document.getElementById("btn-geolocation").addEventListener("click", () => {
   try {
     GeoLocation();
   } catch (err) {
-    alert(err);
+    alert("errore" + err);
   }
 
 })
