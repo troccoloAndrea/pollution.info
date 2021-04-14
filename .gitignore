@@ -3,4 +3,4 @@ jspm_packages/
 .npm
 .env
 .env.test
-bundle.js
+main.js
