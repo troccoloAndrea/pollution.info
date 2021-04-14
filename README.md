@@ -1,4 +1,6 @@
 # pollution.info
+<img width="853" alt="pollution info cattura" src="https://user-images.githubusercontent.com/46674104/114723362-e58fc280-9d3a-11eb-80ac-aebf89549682.PNG">
+
 This is a web application to know the pollution level of a city or your current location. 
 
 This project was developed in Javascript using webpack.
