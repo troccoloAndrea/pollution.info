@@ -35,9 +35,6 @@ hr {
     color: #433FD1;
     padding-top: 15px;
     padding-bottom: 15px;
-    /* -webkit-box-shadow: 0px 0px 46px 0px rgba(219, 219, 219, 0.71);
-    -moz-box-shadow: 0px 0px 46px 0px rgba(219, 219, 219, 0.71);
-    box-shadow: 0px 0px 46px 0px rgba(219, 219, 219, 0.71); */
 }
 
 .navbar-brand {
@@ -120,10 +117,10 @@ hr {
 }
 
 #arrow-up {
-    right: 18%;
+    right: 25%;
     top: 32%;
-    width: 23%;
-    position: absolute;
+    width: 16%;
+    position: absolute;;
 }
 
 main {
@@ -315,6 +312,15 @@ td{
 .navbar-toggler-icon{
     color:#433FD1;
     vertical-align: middle;
+}
+
+@media  (max-width:1450px){
+    #arrow-up{
+        right: 14%;
+        top: 32%;
+        width: 25%;
+        position: absolute;
+    }
 }
 
 @media (max-width: 1000px){

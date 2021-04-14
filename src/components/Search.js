@@ -2,27 +2,27 @@ import axios from 'axios'
 import Render from './RenderValue'
 
 export default (city, position) => {
-    
-    let APIlink = "";
-    
-    if(city != undefined){
-        APIlink = process.env.APILINK + `${city}/?token=${process.env.TOKEN}`
-    }
-    else{
-        if(position == undefined){
-            throw "Position is not defined"
-        }
-        console.log("lat" + position.latitude)
-        console.log("long" + position.longitude)
-        APIlink = process.env.APILINK + `geo:${position.latitude};${position.longitude}/?token=${process.env.TOKEN}`
-        console.log(APIlink)
-    }
-    console.log("link: " + APIlink);
-    axios.get(APIlink).then(res => {
-        console.log("res: " + JSON.stringify(res.data))
-        Render(true,res.data.data);
-    }).catch(error =>{
-        console.error(error.data)
+
+    axios.get(GetApiLink(city, position)).then(res => {
+        Render(true, res.data.data);
+
+    }).catch(error => {
         Render(false, error.data);
     });;
+}
+
+function GetApiLink(city, position){
+
+    //Replace process.env.TOKEN with your own token for test the app.
+    const Token = process.env.TOKEN;
+
+    if (city != undefined) {
+        return process.env.APILINK + `${city}/?token=${Token}`
+    } else {
+
+        if (position == undefined) {
+            throw "Position is not defined"
+        }
+        return process.env.APILINK + `geo:${position.latitude};${position.longitude}/?token=${Token}`
+    }
 }

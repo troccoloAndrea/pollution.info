@@ -11,7 +11,6 @@ export default () => {
       
       function success(pos) {
           Search(undefined, pos.coords)
-
       }
       
       function error(err) {

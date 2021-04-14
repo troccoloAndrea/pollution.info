@@ -2,5 +2,4 @@ node_modules/
 jspm_packages/
 .npm
 .env
-.env.test
 main.js

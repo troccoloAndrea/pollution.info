@@ -2,7 +2,6 @@ import AqiBadge from './AqiBadge'
 
 export default (find, data) => {
   if (find) {
-    console.log(JSON.stringify(data));
     var dataValue =
       `<div class="col-md-6">
           <label><i class="fas fa-map-marker-alt"></i> Stazione di:</label>
@@ -70,10 +69,10 @@ export default (find, data) => {
       
       
       `;
-    console.log(dataValue);
     document.getElementById("data-value").innerHTML = dataValue;
     document.getElementById("data-row").scrollIntoView();
   } else {
+    //404 not found
     document.getElementById("data-value").innerHTML = `
     <div class="not-found">
     <p>404<i class="far fa-sad-tear"></i></p>

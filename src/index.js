@@ -8,7 +8,8 @@ document.getElementById("form-search").addEventListener("submit", (e) => {
   try {
     Search(city)
   } catch (err) {
-    alert(err);
+    console.error(err)
+    alert("Errore: " + err);
   }
 
 });
@@ -17,7 +18,8 @@ document.getElementById("btn-geolocation").addEventListener("click", () => {
   try {
     GeoLocation();
   } catch (err) {
-    alert("errore" + err);
+    console.error(err)
+    alert("Errore: " + err);
   }
 
 })
