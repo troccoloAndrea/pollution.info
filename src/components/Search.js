@@ -1,14 +1,13 @@
 import axios from 'axios'
 import Render from './RenderValue'
 
-export default (city, position) => {
-
-    axios.get(GetApiLink(city, position)).then(res => {
-        Render(true, res.data.data);
-
-    }).catch(error => {
-        Render(false, error.data);
-    });;
+export default async (city, position) => {
+    try{
+        var res = await axios.get(GetApiLink(city, position));
+        Render(true, res.data.data) 
+    }  catch (error) {
+        Render(false, error.data)
+    }
 }
 
 function GetApiLink(city, position){
